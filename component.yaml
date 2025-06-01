@@ -1,0 +1,16 @@
+name: Choreo Reading List
+projectName: Projects
+componentType: service
+source:
+  repository: https://github.com/mit-0044/Projects
+  branch: main
+  context: /
+build:
+  command: npm install
+run:
+  command: npm start
+api:
+  type: REST
+  context: /projects
+  version: v1.0
+  schemaFilePath: openapi.yaml
